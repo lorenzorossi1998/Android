@@ -6,4 +6,26 @@
     <string name="btn">Btn</string>
     <string name="shop">Shop</string>
     <string name="clickToAddContent">clickToAddContent</string>
+    <string name="standard_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien risus, gravida quis nunc at, pellentesque mattis lacus. Morbi eget erat vitae enim viverra venenatis vitae eu quam.</string>
+    <string name="group_name">Group name</string>
+    <string name="last_message">Last message</string>
+    <string name="todo">TODO</string>
+    <string name="message_hint">Type your message</string>
+    <string name="button_send_text">Send</string>
+    <string name="username">Username</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="logout">LogOut</string>
 </resources>
