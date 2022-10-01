@@ -1,0 +1,9 @@
+
+MyCloset/.idea/
+MyCloset/.gradle/
+
+*.gradle
+
+*.properties
+
+*.bin
