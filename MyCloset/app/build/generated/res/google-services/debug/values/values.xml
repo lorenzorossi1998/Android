@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">44424936018-jgooasakoc120rteotcuvu8psbihp0ki.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://mycloset-5fce8-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">44424936018</string>
+    <string name="google_api_key" translatable="false">AIzaSyBY0LTFFhz-73BlMKv35aNlpmGhaKsRhzE</string>
+    <string name="google_app_id" translatable="false">1:44424936018:android:051e1976041bdf22547d8b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBY0LTFFhz-73BlMKv35aNlpmGhaKsRhzE</string>
+    <string name="google_storage_bucket" translatable="false">mycloset-5fce8.appspot.com</string>
+    <string name="project_id" translatable="false">mycloset-5fce8</string>
+</resources>
