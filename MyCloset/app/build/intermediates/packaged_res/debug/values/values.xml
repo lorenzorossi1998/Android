@@ -10,10 +10,13 @@
     <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">MyCloset</string>
     <string name="armadio">Armadio</string>
+    <string name="brand">brand</string>
     <string name="btn">Btn</string>
     <string name="button_send_text">Send</string>
     <string name="clickToAddContent">clickToAddContent</string>
+    <string name="cloth">cloth</string>
     <string name="cognome">Cognome</string>
+    <string name="currency">currency</string>
     <string name="default_web_client_id" translatable="false">44424936018-jgooasakoc120rteotcuvu8psbihp0ki.apps.googleusercontent.com</string>
     <string name="e_mail">E-mail</string>
     <string name="firebase_database_url" translatable="false">https://mycloset-5fce8-default-rtdb.europe-west1.firebasedatabase.app</string>
@@ -34,12 +37,16 @@
     <string name="nome">Nome</string>
     <string name="password">Password</string>
     <string name="previous">Previous</string>
+    <string name="price">price</string>
+    <string name="productimage">productImage</string>
     <string name="project_id" translatable="false">mycloset-5fce8</string>
+    <string name="rating">rating</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="shop">Shop</string>
     <string name="sign_in">Sign In</string>
     <string name="social">Social</string>
     <string name="standard_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien risus, gravida quis nunc at, pellentesque mattis lacus. Morbi eget erat vitae enim viverra venenatis vitae eu quam.</string>
+    <string name="title">title</string>
     <string name="title_activity_sign_in">SignInActivity</string>
     <string name="todo">TODO</string>
     <string name="username">Username</string>
