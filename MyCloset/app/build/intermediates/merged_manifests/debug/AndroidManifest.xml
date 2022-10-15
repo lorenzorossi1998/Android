@@ -28,6 +28,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyCloset" >
         <activity
+            android:name="com.example.mycloset.ShopActivity"
+            android:exported="true" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.mycloset.MainActivity"
             android:exported="true" >
             <intent-filter>
