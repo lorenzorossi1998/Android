@@ -30,6 +30,13 @@ id categoriaTW
 id chat1
 id currencyText
 id descrizioneTW
+id detailsCurrencyText
+id detailsDesciptionText
+id detailsPriceText
+id detailsProductImage
+id detailsRateImage
+id detailsRateText
+id detailsTitleText
 id editCognome
 id editEmail
 id editNome
@@ -66,6 +73,7 @@ id txtUsername
 id urlIW
 id votoTW
 layout activity_main
+layout activity_product_deteils
 layout activity_shop
 layout activity_signin
 layout bottom_nav_bar
@@ -88,6 +96,7 @@ string cloth
 string cognome
 string currency
 string default_web_client_id
+string descrizione
 string e_mail
 string firebase_database_url
 string first_fragment_label

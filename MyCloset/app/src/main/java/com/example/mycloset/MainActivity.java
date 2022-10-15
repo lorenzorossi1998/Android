@@ -42,9 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 ConstraintLayout cl = findViewById(R.id.layout);
                 int y = 500;
 
+                ArrayList<Utente> utenti = new ArrayList<>();
+
                 for(Object o : list) {
+                    utenti.add((Utente) o);
                     // castare l'oggetto
-                    Utente utente = (Utente) o;
+                    /*Utente utente = (Utente) o;
                     // usare l'oggetto
                     Log.d("DEBUG", "I received " + utente.toString());
 
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     tw.setX(20);
                     tw.setY(y);
                     y += 100;
-                    cl.addView(tw);
+                    cl.addView(tw);*/
                 }
             }
 

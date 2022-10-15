@@ -2739,6 +2739,13 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailsCurrencyText
+id detailsDesciptionText
+id detailsPriceText
+id detailsProductImage
+id detailsRateImage
+id detailsRateText
+id detailsTitleText
 id dialog_button
 id dimensions
 id direct
@@ -3205,6 +3212,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_product_deteils
 layout activity_shop
 layout activity_signin
 layout bottom_nav_bar
@@ -3378,6 +3386,7 @@ string common_signin_button_text_long
 string copy_toast_msg
 string currency
 string default_web_client_id
+string descrizione
 string e_mail
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
