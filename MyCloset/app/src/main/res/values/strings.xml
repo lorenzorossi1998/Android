@@ -1,4 +1,5 @@
 <resources>
+    <string name="title">title</string>
     <string name="app_name">MyCloset</string>
     <string name="social">Social</string>
     <string name="home">Home</string>

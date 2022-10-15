@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.classes.objects.Listeners;
 import com.classes.objects.Utente;
@@ -24,10 +27,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.armadio);
         //setContentView(R.layout.social_view);
 
+
         db = new DB("", "", "");
+
 
         db.connect();
 
@@ -39,13 +44,21 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(ArrayList<Object> list, Context context) {
-                ConstraintLayout cl = findViewById(R.id.layout);
+                Log.d("TAG", "onSuccess: " + list.get(0).getClass());
+
+
+
+                RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+                mRecyclerView.setHasFixedSize(true);
+                GridLayoutManager mLayoutManager = new GridLayoutManager(context, 2);
+                mRecyclerView.setLayoutManager(mLayoutManager);
+                MyAdapter mAdapter = new MyAdapter(list, Utente.class);
+                mRecyclerView.setAdapter(mAdapter);
+
+                /*ConstraintLayout cl = findViewById(R.id.layout);
                 int y = 500;
 
-                ArrayList<Utente> utenti = new ArrayList<>();
-
-                for(Object o : list) {
-                    utenti.add((Utente) o);
+                for (Object o : list) {
                     // castare l'oggetto
                     /*Utente utente = (Utente) o;
                     // usare l'oggetto
@@ -56,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
                     tw.setX(20);
                     tw.setY(y);
                     y += 100;
-                    cl.addView(tw);*/
-                }
+                    cl.addView(tw);
+                }*/
             }
 
             @Override
@@ -75,13 +88,13 @@ public class MainActivity extends AppCompatActivity {
         db.SELECT("Utente", filters, l, this);
 
         //Log.d("DEBUG", users.toString());
-        /*for(String key : users.keySet()) {
+        /*for (String key : users.keySet()) {
             TextView tw = new TextView(this);
             tw.setText(key);
             cl.addView(tw);
-        }*/
+        }
 
-        /*recyclerView = findViewById(R.id.recView);
+        recyclerView = findViewById(R.id.recView);
 
         ArrayList<Item> list = db.SELECT("");
         ChatAdapter chatAdapter = new ChatAdapter(this, list);
@@ -92,15 +105,14 @@ public class MainActivity extends AppCompatActivity {
                 // Do something in response to button click
             }
         });*/
-
     }
 
-    public void save(View view) {
+    public void save (View view){
         EditText t = (EditText) findViewById(R.id.editEmail);
         String text = t.getText().toString();
 
         String debug;
-        if(!text.isEmpty()) {
+        if (!text.isEmpty()) {
             Utente utente = new Utente();
             utente.setNome(text);
 

@@ -1,0 +1,17 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/armadio_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="#FFEA00"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="7dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:gravity="center" />
+</androidx.cardview.widget.CardView>
