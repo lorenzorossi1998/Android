@@ -37,15 +37,20 @@ public class DataProvider {
         public int getImage() {
             return R.drawable.ic_home;
         };
+
+        public int getTitle() {
+            return R.string.title;
+        }
     }
 
-    public Content uno = new Content("maglia", "t-shirt", "green");
+    public static Content uno = new Content("maglia", "t-shirt", "green");
     public Content due = new Content("braghe", "pantaloni", "green");
     public Content tre = new Content("calzini", "calzini", "green");
 
 
     public static List<Content> getContentsByCategory(List<Content> greenCategory) {
-        return GREEN_CATEGORY;
+        greenCategory.add(uno);
+        return greenCategory;
     }
 }
 

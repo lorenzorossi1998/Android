@@ -2652,6 +2652,7 @@ id animateToStart
 id antiClockwise
 id anticipate
 id arc
+id armadio_row
 id asConfigured
 id async
 id auto
@@ -2959,6 +2960,7 @@ id ratio
 id recView
 id rectangles
 id recyclerView
+id recyclerview
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3207,6 +3209,8 @@ layout abc_tooltip
 layout activity_main
 layout activity_shop
 layout activity_signin
+layout armadio
+layout armadio_row
 layout bottom_nav_bar
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

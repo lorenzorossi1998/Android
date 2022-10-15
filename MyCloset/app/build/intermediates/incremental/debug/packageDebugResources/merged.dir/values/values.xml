@@ -8,7 +8,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
-    <item name="image" type="id">prova</item>
     <string name="app_name">MyCloset</string>
     <string name="armadio">Armadio</string>
     <string name="btn">Btn</string>
@@ -41,6 +40,7 @@
     <string name="sign_in">Sign In</string>
     <string name="social">Social</string>
     <string name="standard_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien risus, gravida quis nunc at, pellentesque mattis lacus. Morbi eget erat vitae enim viverra venenatis vitae eu quam.</string>
+    <string name="title">title</string>
     <string name="title_activity_sign_in">SignInActivity</string>
     <string name="todo">TODO</string>
     <string name="username">Username</string>

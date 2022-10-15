@@ -9,9 +9,7 @@
         android:id="@+id/recyclerview"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:itemCount="5"
-        tools:listitem="@layout/armadio_row" />
+        android:layout_height="match_parent" />
 
     <include
         android:id="@+id/nav_bar"

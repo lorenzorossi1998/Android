@@ -116,7 +116,7 @@ public class DB {
                             if (insert) {
                                 list.add(obj);
                             }
-                            Log.d("DEBUG", "Sending " + list.toString());
+                            //Log.d("DEBUG", "Sending " + list.toString());
                         }
 
                         l.onSuccess(list, context);
