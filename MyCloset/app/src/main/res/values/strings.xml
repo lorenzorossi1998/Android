@@ -20,21 +20,59 @@
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="title_activity_sign_in">SignInActivity</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="welcome">Benvenuto</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="logout">LogOut</string>
     <string name="cloth">cloth</string>
     <string name="productimage">productImage</string>
-    <string name="title">title</string>
     <string name="brand">brand</string>
     <string name="price">price</string>
     <string name="rating">rating</string>
     <string name="currency">currency</string>
     <string name="descrizione">descrizione</string>
+    <string name="conferma_password">Conferma Password</string>
+    <string name="already_registered">Hai già un account?</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="invalid_name">Il nome non può essere vuoto</string>
+    <string name="invalid_surname">Il cognome non può essere vuoto</string>
+    <string name="username_already_taken">Username già preso</string>
+    <string name="invalid_username">L\'username deve contenere almeno 6 caratteri</string>
+    <string name="invalid_email">Formato email non valido</string>
+    <string name="invalid_password">La password deve contenere almeno 8 caratteri</string>
+    <string name="invalid_confirmPassword">La conferma della password deve corrispondere alla password</string>
+
+    <string name="registration_in_progress">Registrazione in corso</string>
+    <string name="registration_succeed">Registrazione avvenuta con successo</string>
+    <string name="registration_failed">Registrazione fallita</string>
+
+    <string name="incorrect_email">Email non corretta</string>
+    <string name="incorrect_password">Password non corretta</string>
+
+    <string name="login_in_progress">Accesso in corso</string>
+    <string name="login_succeed">Accesso avvenuto con successo</string>
+    <string name="login_failed">Accesso fallito</string>
+
+    <string name="please_wait">Attendi mentre verifichiamo le tue credenziali</string>
+
+    <string name="login">LogIn</string>
+    <string name="forgot_password">Password dimenticata?</string>
+    <string name="revoked_access">Accessi revocati</string>
+    <string name="non_hai_ancora_un_account">Non hai ancora un account?</string>
+    <string name="registrati">Registrati!</string>
+
+    <string name="username_not_exists">L\'username non esiste!</string>
+    <string name="logout_succeed">Logout effettuato</string>
 </resources>

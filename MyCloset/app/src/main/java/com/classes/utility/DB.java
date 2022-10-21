@@ -3,11 +3,14 @@ package com.classes.utility;
 import android.content.Context;
 import android.provider.ContactsContract;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.classes.objects.Capo;
 import com.classes.objects.Listeners;
 import com.classes.objects.Utente;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -48,24 +51,28 @@ public class DB {
 
         DatabaseReference table = db.getReference(tableName);
 
-        if(filters.containsKey("id")) {
-            table.orderByKey().equalTo(filters.get("id")).addListenerForSingleValueEvent(new ValueEventListener() {
+        Class tmpClass = null;
+        try {
+            tmpClass = Class.forName("com.classes.objects." + tableName);
+        } catch(Exception e) {
+            Log.e("ERROR", "Class not found", e);
+        }
+        Class objClass = tmpClass;
+
+        if(filters != null && filters.containsKey("id")) {
+            table.orderByKey().equalTo(filters.get("id")).addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if(snapshot.exists()) {
                         ArrayList<Object> list = new ArrayList<>();
-
-                        try {
                             for(DataSnapshot ds : snapshot.getChildren()) {
-                                list.add(ds.getValue(Class.forName("com.classes.objects." + tableName)));
+                                list.add(ds.getValue(objClass));
                             }
-                        } catch(Exception e) {
-                            Log.e("ERROR", "Class not found", e);
-                        }
 
                         l.onSuccess(list, context);
                     } else {
                         // negative alert
+                        Log.e("DEBUG", "Snapshot doesn't exists");
                     }
                 }
 
@@ -80,7 +87,6 @@ public class DB {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
-
                     if (dataSnapshot.exists()) {
                         ArrayList<Object> list = new ArrayList<>();
 
@@ -88,7 +94,7 @@ public class DB {
                             Object obj = null;
 
                             try {
-                                obj = ds.getValue(Class.forName("com.classes.objects." + tableName));
+                                obj = ds.getValue(objClass);
                             } catch (Exception e) {
                                 Log.e("ERROR", "Class not found");
                             }
@@ -128,14 +134,14 @@ public class DB {
                 @Override
                 public void onCancelled(DatabaseError error) {
                     // Failed to read value
-                    Log.w("DEBUG", "Failed to read value.", error.toException());
+                    Log.e("DEBUG", "Failed to read value.", error.toException());
                     l.onFailed(error);
                 }
             });
         }
     }
 
-    public void INSERT(String tableName, Object json) {
+    public void INSERT(String tableName, Object json, Context context) {
         DatabaseReference table = db.getReference(tableName);
 
         String id = table.push().getKey();
@@ -143,11 +149,12 @@ public class DB {
             @Override
             public void onSuccess(Void unused) {
                 // positive alert
+                Toast.makeText(context, "Inserimento avvenuto con successo", Toast.LENGTH_LONG);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                // negative alert
+                Toast.makeText(context, "Inserimento fallito", Toast.LENGTH_LONG);
             }
         });
     }

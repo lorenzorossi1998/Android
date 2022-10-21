@@ -1,20 +1,19 @@
-<<<<<<< HEAD
-#Sat Oct 15 11:27:37 CEST 2022
-=======
-#Thu Aug 04 22:27:27 CEST 2022
->>>>>>> main
+#Fri Oct 21 21:34:06 CEST 2022
 path.4=classes2.dex
 path.3=15/classes.dex
 path.2=13/classes.dex
 path.1=0/classes.dex
+path.5=classes3.dex
 path.0=classes.dex
-base.4=/home/ubuntu/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.3=/home/ubuntu/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
-base.2=/home/ubuntu/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
-base.1=/home/ubuntu/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.0=/home/ubuntu/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.4=/home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+base.3=/home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+base.2=/home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
+base.1=/home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.0=/home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+renamed.5=classes6.dex
 renamed.4=classes5.dex
+base.5=/home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex

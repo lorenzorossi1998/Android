@@ -3,6 +3,7 @@ package com.classes.objects;
 import java.util.ArrayList;
 
 public class Capo {
+    private String id;
     private String marca;
     private String modello;
     private String categoria;
@@ -17,7 +18,8 @@ public class Capo {
 
     }
 
-    public Capo(String marca, String modello, String categoria, double voto, double prezzo, String valuta, ArrayList<String> descrizione, String productURL, String imageURL) {
+    public Capo(String id, String marca, String modello, String categoria, double voto, double prezzo, String valuta, ArrayList<String> descrizione, String productURL, String imageURL) {
+        this.id = id;
         this.marca = marca;
         this.modello = modello;
         this.categoria = categoria;
@@ -27,6 +29,10 @@ public class Capo {
         this.descrizione = descrizione;
         this.productURL = productURL;
         this.imageURL = imageURL;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getMarca() {
@@ -63,6 +69,10 @@ public class Capo {
 
     public String getProductURL() {
         return productURL;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setMarca(String marca) {
@@ -104,10 +114,13 @@ public class Capo {
     @Override
     public String toString() {
         return "Capo{" +
-                "marca='" + marca + '\'' +
+                "id='" + id + '\'' +
+                ", marca='" + marca + '\'' +
                 ", modello='" + modello + '\'' +
                 ", categoria='" + categoria + '\'' +
                 ", voto=" + voto +
+                ", prezzo=" + prezzo +
+                ", valuta='" + valuta + '\'' +
                 ", descrizione=" + descrizione +
                 ", productURL='" + productURL + '\'' +
                 ", imageURL='" + imageURL + '\'' +

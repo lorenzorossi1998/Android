@@ -28,7 +28,34 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyCloset" >
         <activity
-            android:name="com.example.mycloset.productDeteils"
+            android:name="com.example.mycloset.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyCloset.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.mycloset.ArmadioActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.mycloset.ProductActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,7 +85,8 @@
         </activity>
         <activity
             android:name="com.example.mycloset.SigninActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.MyCloset.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

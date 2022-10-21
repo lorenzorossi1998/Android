@@ -6,16 +6,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.classes.objects.Listeners;
 import com.classes.objects.Utente;
 import com.classes.utility.DB;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseError;
 
 import java.util.ArrayList;
@@ -23,16 +22,17 @@ import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
     DB db;
+    MyCloset app;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.armadio);
-        //setContentView(R.layout.social_view);
+        setContentView(R.layout.activity_main);
 
+        auth = FirebaseAuth.getInstance();
 
         db = new DB("", "", "");
-
 
         db.connect();
 
@@ -44,23 +44,21 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(ArrayList<Object> list, Context context) {
-                Log.d("TAG", "onSuccess: " + list.get(0).getClass());
-
-
-
-                RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+                /*
+                RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
                 mRecyclerView.setHasFixedSize(true);
                 GridLayoutManager mLayoutManager = new GridLayoutManager(context, 2);
                 mRecyclerView.setLayoutManager(mLayoutManager);
                 MyAdapter mAdapter = new MyAdapter(list, Utente.class);
                 mRecyclerView.setAdapter(mAdapter);
+                */
 
-                /*ConstraintLayout cl = findViewById(R.id.layout);
+                ConstraintLayout cl = findViewById(R.id.layout);
                 int y = 500;
 
                 for (Object o : list) {
                     // castare l'oggetto
-                    /*Utente utente = (Utente) o;
+                    Utente utente = (Utente) o;
                     // usare l'oggetto
                     Log.d("DEBUG", "I received " + utente.toString());
 
@@ -70,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     tw.setY(y);
                     y += 100;
                     cl.addView(tw);
-                }*/
+                }
             }
 
             @Override
@@ -81,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
 
         HashMap<String, String> filters = new HashMap<>();
 
-        //filters.put("id", "2");
-        filters.put("nome", "o");
+        //filters.put("id", "-N853PjPD8zC7DZ3el4K");
+        //filters.put("nome", "o");
         //filters.put("cognome", "i");
 
         db.SELECT("Utente", filters, l, this);
@@ -107,8 +105,13 @@ public class MainActivity extends AppCompatActivity {
         });*/
     }
 
+    public void logout(View v) {
+        auth.signOut();
+        Toast.makeText(MainActivity.this, getString(R.string.logout_succeed), Toast.LENGTH_LONG).show();
+    }
+
     public void save (View view){
-        EditText t = (EditText) findViewById(R.id.editEmail);
+        EditText t = (EditText) findViewById(R.id.ev_email);
         String text = t.getText().toString();
 
         String debug;
@@ -116,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             Utente utente = new Utente();
             utente.setNome(text);
 
-            db.INSERT("Utente", utente);
+            db.INSERT("Utente", utente, this);
             // positive alert
             debug = "Inserito";
         } else {

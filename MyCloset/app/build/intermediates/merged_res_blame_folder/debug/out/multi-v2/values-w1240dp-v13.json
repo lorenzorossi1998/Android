@@ -1,23 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycloset.app-mergeDebugResources-29:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.mycloset.app-mergeDebugResources-35:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mmaff\\Documents\\Github\\Android\\MyCloset\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "/home/lorenzo/Scrivania/Android/MyCloset/app/src/main/res/values-w1240dp/dimens.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "6",
-                        "startOffsets": "19",
-                        "endColumns": "44",
-                        "endOffsets": "57"
+                        "startLines": "2,1",
+                        "startColumns": "4,6",
+                        "startOffsets": "61,18",
+                        "endColumns": "58,44",
+                        "endOffsets": "115,56"
                     },
                     "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,114",
+                        "endColumns": "58,42",
+                        "endOffsets": "109,152"
                     }
                 }
             ]

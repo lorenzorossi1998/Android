@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mycloset.app-mergeDebugResources-29:/values-v26/values-v26.xml",
+            "outputFile": "com.example.mycloset.app-mergeDebugResources-35:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mmaff\\.gradle\\caches\\transforms-3\\967b882cefd245b1b52bdc10e208d02e\\transformed\\appcompat-1.4.2\\res\\values-v26\\values-v26.xml",
+                    "source": "/home/lorenzo/.gradle/caches/transforms-3/967b882cefd245b1b52bdc10e208d02e/transformed/appcompat-1.4.2/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

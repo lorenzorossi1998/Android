@@ -1,0 +1,7 @@
+com.example.mycloset.test.app-androidTest-0 /home/lorenzo/Scrivania/Android/MyCloset/app/build/generated/res/resValues/androidTest/debug
+com.example.mycloset.test.app-androidTest-1 /home/lorenzo/Scrivania/Android/MyCloset/app/build/generated/res/rs/androidTest/debug
+com.example.mycloset.test.app-mergeDebugAndroidTestResources-2 /home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.mycloset.test.app-mergeDebugAndroidTestResources-3 /home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.mycloset.test.app-merged_res-4 /home/lorenzo/Scrivania/Android/MyCloset/app/build/intermediates/merged_res/debugAndroidTest
+com.example.mycloset.test.app-androidTest-5 /home/lorenzo/Scrivania/Android/MyCloset/app/src/androidTest/res
+com.example.mycloset.test.app-androidTestDebug-6 /home/lorenzo/Scrivania/Android/MyCloset/app/src/androidTestDebug/res
